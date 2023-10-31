@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: #926239;
+  text-align: center;
+}
+header {
+  background-image: url(../assets/images/beach.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 20%;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttom {
+  display: inline-block;
+  width: max-content;
+  font-size: 18px;
+  text-decoration: none;
+  color: #926239;
+  border: #926239 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 40px;
+}
+section {
+  padding: 20px;
+}
+
+div {
+  width: 33%;
+  display: inline-block;
+  padding: 20px;
+}
+.box-brown {
+  background-color: #926239;
+  color: aliceblue;
+}

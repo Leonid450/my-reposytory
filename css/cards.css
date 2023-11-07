@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+.section {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  padding-left: 50px;
+  color: aliceblue;
+  position: relative;
+}
+.section:hover .one {
+  transform: translate(200px, -200px);
+}
+.section:hover .two {
+  transform: translate(-200px, 200px);
+}
+
+.red:first-child {
+  background: rgb(246, 198, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 198, 131, 1) 0%,
+    rgba(242, 119, 165, 1) 68%,
+    rgba(215, 152, 191, 1) 100%
+  );
+}
+.blue:nth-child(2n) {
+  background: rgb(226, 236, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 236, 242, 1) 0%,
+    rgba(119, 196, 242, 1) 31%,
+    rgba(15, 158, 244, 1) 100%
+  );
+}
+.green:nth-child(3n) {
+  background: rgb(183, 236, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(183, 236, 222, 1) 0%,
+    rgba(79, 214, 174, 1) 22%,
+    rgba(74, 170, 155, 1) 100%
+  );
+}
+.mini-header {
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.number {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.mini-footer {
+  font-size: 20px;
+}
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.342);
+  position: absolute;
+  transition: transform 0.5s linear;
+}
+
+.one {
+  top: -30px;
+  right: -100px;
+}
+.two {
+  right: -30px;
+  bottom: -100px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 60px;
+}

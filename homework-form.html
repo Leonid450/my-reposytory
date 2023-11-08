@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/homework-form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header><h1></h1></header>
+    <main>
+      <article class="article">
+        <h2 class="head">Register</h2>
+        <p class="text">
+          Create your account. It`s free and only takes a minute
+        </p>
+        <form class="form">
+          <fieldset class="fln">
+            <input
+              class="name"
+              name="firstname"
+              placeholder="First Name"
+              required
+            />
+
+            <input
+              class="name"
+              name="lastname"
+              placeholder="Last Name"
+              required
+            />
+          </fieldset>
+
+          <input
+            class="email"
+            name="email"
+            type="email"
+            placeholder="Email"
+            pattern="[a-zA-Z0-9]{2,32}@[a-zA-Z]{1,64}\.[a-zA-Z]{1,64}"
+          />
+          <input
+            class="pas"
+            name="password"
+            type="password"
+            placeholder="Password"
+          />
+          <input
+            class="pas"
+            name="password"
+            type="password"
+            placeholder="Confirm Password"
+          />
+          <label
+            ><input type="checkbox" name="accept" required />I accept the
+            <a class="link" href="#">Terms of Use</a> &
+            <a class="link" href="#">Privecy Policy</a></label
+          >
+          <button class="buttom" type="submit">Register Now</button>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid black;
+  color: rgb(110, 112, 112);
+  background-color: rgb(236, 246, 250);
+  padding: 10px;
+  max-width: 400px;
+  min-height: 500px;
+  font-size: 20px;
+}
+.head {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(80, 79, 77);
+  position: relative;
+}
+.head::before {
+  content: "_______ ";
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -120px;
+  color: rgb(180, 180, 180);
+}
+.head::after {
+  content: "_______";
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: -120px;
+
+  color: rgb(180, 180, 180);
+}
+.text {
+  font-size: smaller;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  min-height: 300px;
+}
+.fln {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  justify-content: space-between;
+}
+.name {
+  width: 170px;
+  font-size: 20px;
+  padding: 5px;
+}
+.email,
+.pas,
+.buttom {
+  width: 360px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.buttom {
+  background-color: green;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.5s linear;
+}
+.buttom:hover {
+  background-color: rgb(0, 83, 0);
+  color: black;
+}
+.link:link {
+  color: green;
+}
